@@ -1,5 +1,5 @@
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "bunker life deny record denial donor chase artwork jungle know kangaroo admit";
+var mnemonic = "twelve word mnemonic...";
 
 module.exports = {
   networks: {
@@ -11,7 +11,7 @@ module.exports = {
     },
     rinkeby: {
         provider: function () {
-          return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/a5ce75cde96247a8a49c38e62c17d9c0");
+          return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/<api_key>");
             },
             network_id: 1
         }
